@@ -42,14 +42,27 @@ hr {
     width: 140px;
     margin: 20px auto;
 }
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+p {
+    line-height: 21.82px;
+    padding: 10px;
+}
 
+img {
+    display: block;
+    max-width: 100%; /*evita que ultrapsse o tamanho do pai, deixa responsivo */
+}
 /**********************************/
 /* 2. Header
 /**********************************/
 .header-bg {
     background: var(--clr-green-light);
 }
-.header {
+.c-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +70,7 @@ hr {
     margin: auto;
     max-width: 960px;
 }
-.header__logo {
+.c-header__logo {
     margin: 10px;
 }
 
@@ -83,6 +96,25 @@ nav ul {
 /* 4. Quem somos
 /**********************************/
 
+.section-quem-somos {
+    margin: auto;
+    max-width: 960px;
+}
+.c-section-quem-somos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.c-section-quem-somos__paragraph {
+    flex-grow: 6;
+    flex-shrink: 1; /* permite a redução para 1(volta ao tamanho padrão) */
+    flex-basis: 160px; /*tamanho inicial */
+}
+.c-section-quem-somos__img {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 350px;
+}
 /**********************************/
 /* 5. Nossos cursos
 /**********************************/
