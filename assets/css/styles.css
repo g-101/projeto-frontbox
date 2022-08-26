@@ -31,6 +31,7 @@
 body {
     background: var(--clr-white);
     font-family: var(--ff-primary);
+    /* min-height: 100vh; */
 }
 a {
     color: #000;
@@ -45,6 +46,7 @@ hr {
 h2 {
     text-align: center;
     font-size: 3rem;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 h3 {
@@ -68,6 +70,7 @@ img {
     background: var(--clr-green-light);
 }
 .c-header {
+    background: var(--clr-green-light);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,7 +108,7 @@ nav ul {
     margin: 0 auto;
     max-width: 960px;
 }
-.c-section-somos {
+.c-somos {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -127,7 +130,7 @@ nav ul {
     max-width: 960px;
     margin: 0 auto;
 }
-.c-section-cursos {
+.c-cursos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -140,7 +143,97 @@ nav ul {
 /**********************************/
 /* 6. Planos
 /**********************************/
+/* .section-planos {
+    max-width: 960px;
+    margin: 0 auto;
+} */
+.section-planos {
+    background: var(--clr-pink-light);
+}
+.c-planos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.plano {
+    width: 290px;
+    margin: 10px;
+    border: 2px solid var(--clr-green-light);
+}
+/* 3 rem -> 3 x 16px = 48px */
+.plano__titulo {
+    font-weight: 700;
+    margin: 10px auto;
+}
+.plano__preco {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.plano__preco sup {
+    position: relative;
+    font-size: 1.5rem;
+}
+.plano__divisor {
+    background: var(--clr-green-light);
+    width: 20px;
+    margin: 5px auto;
+}
+.plano-lista {
+    max-width: 195px;
+    margin: 0 auto;
+}
+.plano-lista__item {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    margin: 10px 0;
+}
+.plano-lista__item::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: var(--clr-green-light);
+    border-radius: 5px;
+    margin-right: 5px;
+}
 
+.plano__btn-comprar {
+    display: block;
+    max-width: 180px;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px;
+    margin: 15px auto;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid var(--clr-green-light);
+}
+.plano:last-child {
+    background: var(--clr-green-light);
+    border: 2px solid var(--clr-pink-dark);
+}
+.plano:last-child a {
+    border: 2px solid var(--clr-pink-dark);
+}
+.plano:last-child .plano-lista__item::before,
+.plano:last-child .plano__divisor {
+    background: var(--clr-pink-dark);
+}
+
+@media (max-width: 800px) {
+    .plano:nth-child(3) {
+        order: -2;
+    }
+    .plano:nth-child(2) {
+        order: -1;
+    }
+}
 /**********************************/
 /* 7. Vantagens
 /**********************************/
