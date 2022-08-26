@@ -274,6 +274,7 @@ nav ul {
 @media (max-width: 800px) {
     .vantagem {
         max-width: 220px;
+        margin: 10px auto;
     }
 }
 /**********************************/
