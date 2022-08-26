@@ -255,8 +255,8 @@ nav ul {
 .vantagem__titulo::before {
     content: '';
     display: inline-block;
-    width: 20px;
-    height: 10px;
+    width: 10px;
+    height: 25px;
     margin: 0 5px 0 0;
 }
 
