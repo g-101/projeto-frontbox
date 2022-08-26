@@ -1,7 +1,8 @@
 # Frontbox
 
 Um website responsivo para uma empresa fictícia chamada Frontbox.
-Demo: https://projeto-frontbox.netlify.app/
+
+-   Demo: https://projeto-frontbox.netlify.app/
 
 ## 💻 Tecnologias
 
