@@ -345,6 +345,11 @@ nav ul {
     padding: 55px calc((100% - 960px) / 2);
 }
 .c-footer p,
-c-footer__img {
-    padding: 0 10px 0 10px;
+.c-footer__img {
+    padding: 5px 10px 5px 10px;
+    margin: 0 0 10px 0;
+}
+.c-footer a {
+    display: inline-block;
+    margin-left: 10px;
 }
