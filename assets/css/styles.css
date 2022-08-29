@@ -35,9 +35,7 @@ body {
     background: var(--clr-white);
     font-family: var(--ff-primary);
 }
-a {
-    color: #000;
-}
+
 hr {
     border: none;
     background: var(--clr-pink-dark);
@@ -61,10 +59,6 @@ p {
     padding: 0 10px;
 }
 
-img {
-    display: block;
-    max-width: 100%; /*evita que ultrapsse o tamanho do pai, deixa responsivo */
-}
 /**********************************/
 /* 2. Header
 /**********************************/
@@ -145,10 +139,7 @@ nav ul {
 /**********************************/
 /* 6. Planos
 /**********************************/
-/* .section-planos {
-    max-width: 960px;
-    margin: 0 auto;
-} */
+
 .section-planos {
     background: var(--clr-pink-light);
 }
